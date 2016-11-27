@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/mikeSimos/xen_ansible_inventory.svg?branch=master)](https://travis-ci.org/mikeSimos/xen_ansible_inventory)
 # Description
 XEN Ansible Inventory is dynamic inventory script for listing XenServer
 virtual machines. Its configurable via its ini file, or command line 
