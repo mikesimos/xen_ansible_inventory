@@ -47,7 +47,7 @@ class XenServer:
         try:
             session = XenAPI.Session('http://{}'.format(xen_hostname))
             session.xenapi.login_with_password(xen_username, xen_password)
-        except Exception, error:
+        except Exception as error:
             print("Could not connect to XenServer: {}".format(error))
             sys.exit(1)
         self.session = session
@@ -86,13 +86,13 @@ class XenServer:
                         inventory["_meta"]["hostvars"][record['name_label']] = host_vars
 
             return inventory
-        except XenAPI.Failure, e:
+        except XenAPI.Failure as e:
             print("[Error] : " + str(e))
             exit(1)
 
     def list_and_save(self, cache_path):
         """
-        :param cache_path:
+        :param  str cache_path: A path for caching inventory list data.
         :return:
         """
         data = self.list_inventory()
