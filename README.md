@@ -12,7 +12,7 @@ pip install -r requirements.txt
 ``
 
 ###### Clone xen_ansible_inventory at your IT Automation server:
-``git clone https://github.com/mikeSimos/xen_ansible_inventory.git``
+``git clone https://github.com/mikesimos/xen_ansible_inventory.git``
 
 ###### Configure xen_inventory.ini file accordingly.
 #
@@ -27,3 +27,11 @@ $ ansible all -i xen_inventory.py -m ping
 XenServer>=6.5
 XenAPI>=1.2
 configparser
+
+
+Author Information
+------------------
+
+Michael Angelos Simos
+
+[www.asimos.tk](https://www.asimos.tk)
