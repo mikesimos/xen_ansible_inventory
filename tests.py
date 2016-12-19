@@ -34,10 +34,6 @@ class XenAnsibleTestCase(unittest.TestCase):
         from xen_inventory import XenServer
         self.assertTrue(getattr(XenServer, 'cached_inventory'))
 
-    def test_parse_config(self):
-        from xen_inventory import parse_config
-        self.assertEqual(type(parse_config()), type(()))
-
     def test_get_args(self):
         import xen_inventory
         self.assertTrue(getattr(xen_inventory, 'get_args'))
