@@ -22,11 +22,9 @@ Python script for listing Xen Server Virtual Machines for Ansible inventory
 """
 
 import atexit
-from json import load, dump, dumps
 from time import time
 from sys import exit
 from argparse import ArgumentParser
-from configparser import ConfigParser
 import errno
 import os
 import sys
