@@ -26,8 +26,6 @@ $ ansible all -i xen_inventory.py -m ping
 # Requirements
 XenServer>=6.5
 XenAPI>=1.2
-configparser
-
 
 Author Information
 ------------------

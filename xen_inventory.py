@@ -32,6 +32,18 @@ import os
 import sys
 import XenAPI
 
+try:
+    from json import dumps, dump, load
+except ImportError:
+    from simplejson import dumps, dump, load
+from argparse import ArgumentParser
+try:
+    # python 2
+    from ConfigParser import SafeConfigParser as ConfigParser
+except ImportError:
+    # python 3
+    from configparser import ConfigParser
+
 
 class XenServer:
     """
